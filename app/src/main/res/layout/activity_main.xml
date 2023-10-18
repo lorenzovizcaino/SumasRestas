@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="340dp">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/sumar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <RadioButton
+        android:id="@+id/restar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="429dp" />
+
+    <EditText
+        android:id="@+id/cajanum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="213dp" />
+
+    <TextView
+        android:id="@+id/textnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero 2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="278dp" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CALCULADORA"
+        android:textSize="30dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="82dp" />
+
+    <TextView
+        android:id="@+id/textnum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero 1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="233dp" />
+
+    <EditText
+        android:id="@+id/cajanum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="268dp" />
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="535dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
