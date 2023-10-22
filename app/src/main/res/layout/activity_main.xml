@@ -33,20 +33,21 @@
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titulo"
-        tools:ignore="MissingConstraints" />
+        />
 
     <TextView
         android:id="@+id/textnum1"
-        android:layout_width="74dp"
-        android:layout_height="45dp"
+        android:layout_width="118dp"
+        android:layout_height="24dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="64dp"
         android:text="Numero 1"
+        android:textAlignment="center"
+        android:textSize="17dp"
         app:layout_constraintEnd_toStartOf="@+id/cajanum1"
-        app:layout_constraintHorizontal_bias="0.821"
+        app:layout_constraintHorizontal_bias="0.793"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo" />
 
     <EditText
         android:id="@+id/cajanum2"
@@ -63,16 +64,17 @@
 
     <TextView
         android:id="@+id/textnum2"
-        android:layout_width="75dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="115dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="36dp"
         android:text="Numero 2"
+        android:textAlignment="center"
+        android:textSize="17dp"
         app:layout_constraintEnd_toStartOf="@+id/cajanum2"
-        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintHorizontal_bias="0.898"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textnum1"
         tools:ignore="MissingConstraints" />
-
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -119,10 +121,12 @@
 
     <TextView
         android:id="@+id/labelResultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
         android:layout_marginTop="40dp"
         android:text="Resultado"
+        android:textAlignment="center"
+        android:textSize="17dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonCalcular"
@@ -132,12 +136,14 @@
         android:id="@+id/resultado"
         android:layout_width="196dp"
         android:layout_height="67dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="4dp"
         android:ems="10"
         android:inputType="number"
         android:textSize="20sp"
+        android:textAlignment="center"
+
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelResultado"
         tools:ignore="MissingConstraints" />
