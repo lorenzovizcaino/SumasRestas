@@ -1,58 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="340dp">
-
-    </RadioGroup>
-
-    <RadioButton
-        android:id="@+id/sumar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sumar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="362dp" />
-
-    <RadioButton
-        android:id="@+id/restar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Restar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="429dp" />
-
-    <EditText
-        android:id="@+id/cajanum1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="number"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="213dp" />
-
-    <TextView
-        android:id="@+id/textnum2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Numero 2"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="278dp" />
 
     <TextView
         android:id="@+id/titulo"
@@ -70,8 +26,28 @@
         android:layout_height="wrap_content"
         android:text="Numero 1"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="233dp" />
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="174dp" />
+
+    <EditText
+        android:id="@+id/cajanum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="154dp"
+        android:contentDescription="Ingrese el primer valor"/>
+
+    <TextView
+        android:id="@+id/textnum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero 2"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="219dp" />
 
     <EditText
         android:id="@+id/cajanum2"
@@ -80,8 +56,44 @@
         android:ems="10"
         android:inputType="number"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="268dp" />
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="340dp">
+
+        <RadioButton
+            android:id="@+id/sumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sumar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="284dp" />
+
+        <RadioButton
+            android:id="@+id/restar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restar"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="351dp" />
+
+    </RadioGroup>
+
+
+
+
+
+
+
+
 
     <Button
         android:id="@+id/buttonCalcular"
@@ -89,8 +101,32 @@
         android:layout_height="wrap_content"
         android:text="Calcular"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="535dp" />
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="446dp" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/labelResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="542dp" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="196dp"
+        android:layout_height="67dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="593dp" />
+
+
+
+
+</LinearLayout>
